@@ -1,0 +1,179 @@
+
+.top-heading{
+    
+    &__h2{
+        // text-transform: uppercase;
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+    &__h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .1;
+        font-size: 6rem;
+        font-weight: 900;
+        letter-spacing: 15px;
+    }
+  
+
+
+}
+    
+.container{
+    .my-address{
+        color: white;
+
+        .personal-info{
+            // border: 1px solid yellow;
+            .my-address-info{
+                // border: 1px solid red;
+
+            }
+            h4{
+                font-size: .9rem;
+                padding: 5px;
+                padding-left: 0px;
+            }
+        }
+    }
+    .abbox{
+        
+        &__inp{
+            height: 125px;
+            width: 180px;
+            box-shadow: 0px 0px 2px 0px rgba(196, 196, 196, 0.341);
+
+            &__num{
+                position: relative;
+            }
+            &__num::after{
+                content: '+';
+                position: absolute;
+                right: -19px;
+                font-size: 30px;
+                font-weight: 300;
+                top: 2px;
+            }
+
+            .ab-box-text{
+                display: inline-grid;
+                grid-template-columns: 30% 70%;
+
+            .ab-hr{
+                border: 0px solid #dddddd;
+                width: 30px;
+                color: #d5d5d5;
+                opacity: 1;
+                margin: 12px 10px;
+            }
+        }
+    }
+
+    }
+}
+
+.about-hr{
+    display: block;
+    color: rgba(184, 184, 184, 0.11);
+    box-shadow: 0px 0px 2px 0px rgba(146, 146, 146, 0.116);
+    border: 0;
+    width: 30%;
+}
+
+.my-skl{
+    // background-color: yellow;
+    padding-top: 20px !important;
+    height: 150px;
+    width: 200px;
+    // box-shadow: 0px 0px 2px 0px rgba(146, 146, 146, 0.341);
+
+
+    &__box{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(247, 232, 232);
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s;
+    }
+    
+    &__box::before{
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1;
+
+        border-radius: 50%;
+        background-color: rgb(32, 25, 25);
+    }
+
+    &__box::after{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100px;
+        width: 50px;
+        background-color: $color-yellow;
+    }
+   
+
+    .box1::after{
+        top: 0px;
+        right: 0px;
+        height: 100px;
+        width: 70px;
+    
+    }
+  
+    .box2::after{
+        top: 0px;
+        right: 0px;
+        height: 100px;
+        width: 65px;
+        transform: skew( -6deg );
+
+    
+    }
+    .box7::after{
+        top: 0px;
+        right: 0px;
+        height: 100px;
+        width: 50px;
+        transform: skew( -6deg );
+    
+    }
+    .box5::after,
+    .box6::after,
+    .box8::after{
+        top: 0px;
+        right: 0px;
+        height: 60px;
+        width: 50px;
+    
+    }
+
+   
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // color: whitesmoke;
+        z-index: 2; 
+    }
+   
+    &__content:hover{
+    //    transform: scale(1.1) ;
+       transform: translate(-50%, -50%) scale(1.2);
+
+    } 
+  
+
+}
